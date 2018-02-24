@@ -31,5 +31,7 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.map{|element| element + "s"}
+  mapped = array.map{|element| element + "s"}
+  mapped[1] = mapped[1][0..-2]
+  mapped
 end
