@@ -19,5 +19,5 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-  array.map{|element| element[0,2] + "$" + element[4, -1]}
+  array.map{|element| element[0..2] + "$" + element[4..-1]}
 end
