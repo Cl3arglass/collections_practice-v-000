@@ -29,3 +29,7 @@ end
 def sum_array(array)
   array.reduce(:+)
 end
+
+def add_s(array)
+  array.map{|element| element + "s"}[1] - element[-1]
+end
